@@ -1,4 +1,3 @@
-
 /* General -------------------------------------*/
 *{
     margin:0;
@@ -11,74 +10,78 @@ body{
 /*conteneur-------------------------------------*/
 #wrapper{
     width:82%;
-    margin:auto; /*la meme taille a gauche et a droite pour des blocks centrer*/
+    margin:auto; /*la meme taille a gauche et a droite pour des block centrer*/
     text-align: center; 
 }
 /* header-------------------------------------- */
-header img{
+header img{  
    width:100%;
-   vertical-align: top; /*enlevé espacement entre image et celui du dessous*/
+   vertical-align: top; /* reduire lespace*/
 }
 /* title  ----------------------------------*/
 h1{
+    padding: 1%;
     background-color: rgb(20, 106, 235);
     color:white;
 }
 
 h2{
-    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     color:rgb(236, 202, 9);
 }
 
-h3{ padding: 4%;
+h3{ padding: 2%;
     text-align: center;
-
 }
 /* maih ----------------------------------*/
 main{
     width: 100%;
-    padding: 2%;/* espace en haut et en bas*/
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
     background-color: white;
-    display: flex;
-    
+    display: flex; 
     /*text-align: center;*/
 }
 /* list ----------------------------------*/
 nav{
-    width: 20%;
-    padding: 0%;
+    height:fit-content;
+    background-color: rgb(20, 106, 235); 
+    width: 15%;
+    padding:1%;
 }
 ul{
-    padding: 0%;/* espace en haut et en bas*/
+    padding: 1%;/* espace en haut et en bas*/
     text-align: center;
 }
 li{
-    padding: 1%;
-    list-style-type: none;
-    background-color: rgb(20, 106, 235);
+    list-style-type: none;   
 }
-a{  padding: 5%;
+a{  
     color:white;
 }
 /* fin list ----------------------------------*/
 article
-{
-    padding: 1%;
-    width: 75%;
+{   width: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
     text-align: justify;
 }
 /* legende----------------------------------*/
 aside{
-    width: 26%;
+    width: 20%;
     padding: 1%;
     background-color: rgb(20, 106, 235);
     color:white;
-    text-align: center;    
+    text-align: center;   
 }
+
 aside img{
-    width: 70%;
-    margin: 10%;
-    border: 1px solid white;
+    width: 55%;
+    margin: 0%;
+    border:1px solid white;
 }
 aside p{
     text-align: justify;
