@@ -8,69 +8,82 @@
 body{
     background-color:rgb(236, 202, 9);
 }
-
+/*conteneur-------------------------------------*/
 #wrapper{
-    width:80%;
-    margin:auto; /*la meme taille a gauche et a droite pour des block centrer*/
+    width:82%;
+    margin:auto; /*la meme taille a gauche et a droite pour des blocks centrer*/
     text-align: center; 
 }
 /* header-------------------------------------- */
 header img{
-    width:100%
+   width:100%;
+   vertical-align: top; /*enlevé espacement entre image et celui du dessous*/
 }
-/* title High ----------------------------------*/
+/* title  ----------------------------------*/
 h1{
     background-color: rgb(20, 106, 235);
     color:white;
 }
 
-/* maih ----------------------------------*/
-main{
-    
-    background-color: white;
-    /*text-align: center;*/
-    
-    margin:0;
-}
-section{
-    padding: 1%;
-}
-
-nav{padding: 1%;/* espace en haut et en bas*/
-
-}
-li{
-    background-color: rgb(20, 106, 235);
-    width: 15%;
-    list-style-type: none;
-}
-a{
-     color:white;
-}
-/* title 2 ----------------------------------*/
 h2{
+    padding: 1%;
     color:rgb(236, 202, 9);
 }
+
+h3{ padding: 4%;
+    text-align: center;
+
+}
+/* maih ----------------------------------*/
+main{
+    width: 100%;
+    padding: 2%;/* espace en haut et en bas*/
+    background-color: white;
+    display: flex;
+    
+    /*text-align: center;*/
+}
+/* list ----------------------------------*/
+nav{
+    width: 20%;
+    padding: 0%;
+}
+ul{
+    padding: 0%;/* espace en haut et en bas*/
+    text-align: center;
+}
+li{
+    padding: 1%;
+    list-style-type: none;
+    background-color: rgb(20, 106, 235);
+}
+a{  padding: 5%;
+    color:white;
+}
+/* fin list ----------------------------------*/
 article
 {
-    text-align: center;
+    padding: 1%;
+    width: 75%;
     text-align: justify;
 }
 /* legende----------------------------------*/
 aside{
+    width: 26%;
     padding: 1%;
     background-color: rgb(20, 106, 235);
     color:white;
-    width: 22%;
-    text-align: justify;
-    text-align: center;
+    text-align: center;    
 }
 aside img{
-    
-    border:1px solid white;
-    width: 50%;
-   
+    width: 70%;
+    margin: 10%;
+    border: 1px solid white;
 }
+aside p{
+    text-align: justify;
+}
+/* footer----------------------------------*/
 footer{
     background-color: rgb(0, 0, 71);
     color: rgb(255, 255, 255);
