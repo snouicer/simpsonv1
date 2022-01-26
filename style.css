@@ -1,88 +1,71 @@
 /* General -------------------------------------*/
 *{
-    margin:0;
-    box-sizing: border-box;
+     margin:0; /* tout les block on un margin par defaut de 8px*/
+    box-sizing: border-box;/*enlevé les bords*/
 }
 /* body -----------------------------------------*/
 body{
     background-color:rgb(236, 202, 9);
 }
-/*conteneur-------------------------------------*/
+/*conteneur son parent c'est body----------------*/
 #wrapper{
-    width:82%;
+    width:80%;
     margin:auto; /*la meme taille a gauche et a droite pour des block centrer*/
     text-align: center; 
 }
-/* header-------------------------------------- */
-header img{  
-   width:100%;
-   vertical-align: top; /* reduire lespace*/
-}
-/* title  ----------------------------------*/
-h1{
+/* header son parent c'est wrapper------------------------------------ */
+
+/*---Groupe------------------------------------------*/
+h1, nav, aside{
     padding: 1%;
     background-color: rgb(20, 106, 235);
-    color:white;
-    border:1px solid white;
+}
+h1, a, aside, footer{
+    color: rgb(255, 255, 255);
 }
 
+header img{  
+   width:100%;
+   vertical-align: top; /* reduire lespace entre le header et le main*/
+}
+/* main son parent c'est wrapper----------------------------------*/
+main{
+    width: 100%;
+    padding: 2% 1%;
+    background-color: white;
+    display: flex; /*aligne les élements a l'interieur
+    /*text-align: center;*/
+}
+/* nav son parent c'est main ----------------------------------*/
+nav{
+    width: 15%;
+    height:fit-content;/*la taille sadapte au contenu*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;/* mettre en colonne*/
+}
+
+/* title son parent c'est main -----------------------------------*/
 h2{
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2% 0%;
     color:rgb(236, 202, 9);
 }
-
+/* article  son parent c'est main ----------------------------------*/
+article
+{   width: 65%;
+    padding: 0 1%;
+    text-align: justify;
+}
+/* article suplementaire----------------------------------*/
+aside{
+    width: 20%;
+    text-align: center;   
+}
 h3{ padding: 2%;
     text-align: center;
 }
-
-/* list ----------------------------------*/
-nav{
-    height:fit-content;
-    background-color: rgb(20, 106, 235); 
-    width: 100%;
-    text-align: center;
-}
-ul{
-    padding: 1%;/* espace en haut et en bas*/
-   
-    
-}
-li{
-    list-style-type: none;   
-}
-a{  
-    color:white;
-}
-/* maih ----------------------------------*/
-main{
-    width: 100%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    background-color: white;
-    display: flex; 
-    /*text-align: center;*/
-}
-/* fin list ----------------------------------*/
-article
-{   width: 65%;
-    padding-left: 1%;
-    padding-right: 1%;
-    text-align: justify;
-}
-/* legende----------------------------------*/
-aside{
-    width: 20%;
-    padding: 1%;
-    background-color: rgb(20, 106, 235);
-    color:white;
-    text-align: center;   
-}
-
 aside img{
-    width: 55%;
+    width: 80%;
     margin: 0%;
     border:1px solid white;
 }
@@ -92,5 +75,4 @@ aside p{
 /* footer----------------------------------*/
 footer{
     background-color: rgb(0, 0, 71);
-    color: rgb(255, 255, 255);
 }
