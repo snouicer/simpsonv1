@@ -23,6 +23,7 @@ h1{
     padding: 1%;
     background-color: rgb(20, 106, 235);
     color:white;
+    border:1px solid white;
 }
 
 h2{
@@ -34,6 +35,25 @@ h2{
 h3{ padding: 2%;
     text-align: center;
 }
+
+/* list ----------------------------------*/
+nav{
+    height:fit-content;
+    background-color: rgb(20, 106, 235); 
+    width: 100%;
+    text-align: center;
+}
+ul{
+    padding: 1%;/* espace en haut et en bas*/
+   
+    
+}
+li{
+    list-style-type: none;   
+}
+a{  
+    color:white;
+}
 /* maih ----------------------------------*/
 main{
     width: 100%;
@@ -44,23 +64,6 @@ main{
     background-color: white;
     display: flex; 
     /*text-align: center;*/
-}
-/* list ----------------------------------*/
-nav{
-    height:fit-content;
-    background-color: rgb(20, 106, 235); 
-    width: 15%;
-    padding:1%;
-}
-ul{
-    padding: 1%;/* espace en haut et en bas*/
-    text-align: center;
-}
-li{
-    list-style-type: none;   
-}
-a{  
-    color:white;
 }
 /* fin list ----------------------------------*/
 article
